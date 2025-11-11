@@ -4,8 +4,8 @@ from email.mime.text import MIMEText
 
 
 msg = MIMEMultipart()
-msg['From'] = 'shilov.ilya1995@gmail.com'
-msg['To'] = 'shilov.ilya1995@gmail.com'
+msg['From'] = 'mubarakshin.damier@yandex.ru'
+msg['To'] = 'mubarakshin.damier@yandex.ru'
 msg['Subject'] = 'Письмо'
 
 incomplete_modules = ['Основы Python', 'GitHub', 'API']
@@ -21,8 +21,8 @@ else:
     message = f'Сейчас работаю над модулями: {", ".join(incomplete_modules)}. Учёба мне нравится, получаю много знаний!'
 
 msg.attach(MIMEText(message, "plain"))
-email = 'shilov.ilya1995@gmail.com'
-password = 'izfp rxwi xjqh mnms'  
+email = 'mubarakshin.damier@yandex.ru'
+password = 'oklrnsnwwpaeqxsh'  
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.login(email, password)
 server.sendmail(msg['From'], msg['To'], msg.as_string())
